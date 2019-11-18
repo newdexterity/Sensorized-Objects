@@ -89,9 +89,11 @@ for i = 1:length(motion)
     end
     
     %calculating the mean drift quaternion and angle
-    M = Q * Q';
+    M = Q * Q'
+    cov(Q')
     [V,D] = eigs(M);
     q_avg = quaternion(V(:,1)');
+    q_avg_check = meanrot(quaternion(Q'));
     rotDrift(i) = dist(quaternion(1,0,0,0), q_avg);
 end 
 

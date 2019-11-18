@@ -31,9 +31,9 @@ for i = 1:length(motion)
     len = size(data, 1) - 800;
     
     %extractig values and converting to metric
-    x = 25.4*data(start:len, 2);
-    y = 25.4*data(start:len, 3);
-    z = 25.4*data(start:len, 4);
+    x = 1000*data(start:len, 2);
+    y = 1000*data(start:len, 3);
+    z = 1000*data(start:len, 4);
     %extractig values and converting to radians
     rz = data(start:len, 7);   %rz
     ry = data(start:len, 6); %ry
