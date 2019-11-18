@@ -1,5 +1,5 @@
-%           Author: Geng Gao
-%           Date  : June-19-19
+%           Authors: Geng Gao, Gal Gorjup
+%           Date  : Nov-17-19
 %           The University of Auckland
 %      This is a script to visualise and calculate the average drift in
 %      translation and rotation of a given object. This script has been
@@ -103,21 +103,15 @@ for i = 1:length(motion)
     %calculating the mean translation drift vector
     transDrift(i) = norm(mean(transDriftVector));
     
-    % drift rotations
+    %computing rotations between subsequent motions
     for j = start:(bot-1)
-        % Rotation matrix approach
-        %R1 = eul2rotm(rotVal(j,1:3), 'ZYX');
-        %R2 = eul2rotm(rotVal(j+1,1:3), 'ZYX');
-        %Q(1:4, j) = rotm2quat(inv(R1) * R2)
-        
-        % Quaternion approach
         q1 = quaternion(eul2quat(rotVal(j,1:3), 'ZYX'));
         q1_inv = conj(q1);
         q2 = quaternion(eul2quat(rotVal(j+1,1:3), 'ZYX'));
         Q(1:4, j) = compact(q2 * q1_inv);
     end
     
-    % calculating the mean drift quaternion 
+    %calculating the mean drift quaternion and angle
     M = Q * Q';
     [V,D] = eigs(M);
     q_avg = quaternion(V(:,1)');
