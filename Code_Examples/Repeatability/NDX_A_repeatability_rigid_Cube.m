@@ -1,5 +1,5 @@
-%           Author: Geng Gao
-%           Date  : June-19-19
+%           Authors: Geng Gao, Gal Gorjup
+%           Date  : Nov-17-19
 %           The University of Auckland
 %      This is a script to visualise and calculate the average repeatability in
 %      translation and rotation of a given object manipulation motion. This script has been
@@ -40,32 +40,10 @@ for i = 1:length(motion)
     x = 25.4*data(start:len, 2);
     y = 25.4*data(start:len, 3);
     z = 25.4*data(start:len, 4);
-    yaw = data(start:len, 5);   %rz
-    pitch = data(start:len, 6); %ry
-    roll = data(start:len, 7);  %rx
-    
-    % removing angle offset for range of motion
-    %centering coordinate frame of the data 
-    %finding minimum and offsetting the data
-    roll = roll - min(roll);
-    pitch = pitch - min(pitch);
-    yaw = yaw - min(yaw);
-    x = x - min(x);
-    y = y - min(y);
-    z = z - min(z);
-    %centering the data
-    rollMid = (max(roll) - min(roll))/2;
-    pitchMid = (max(pitch) - min(pitch))/2;
-    yawMid = (max(yaw) - min(yaw))/2;
-    rx = roll - rollMid;
-    ry = pitch - pitchMid;
-    rz = yaw - yawMid;
-    Xmid = (max(x) - min(x))/2;
-    Ymid = (max(y) - min(y))/2;
-    Zmid = (max(z) - min(z))/2;
-    x = x - Xmid;
-    y = y - Ymid;
-    z = z - Zmid;
+    %extractig values and converting to radians
+    rz = deg2rad(data(start:len, 5));   %rz
+    ry = deg2rad(data(start:len, 6)); %ry
+    rx = deg2rad(data(start:len, 7));  %rx
     
     % finding peaks
     data = [x,y,z,rx,ry,rz];
@@ -79,27 +57,24 @@ for i = 1:length(motion)
         end
     end
     
-    % getting mean drift vector 
+    % translation repeatability
+    
+    % average drift vector
     start = startCycle(i);
     bot = length(num)-endCycle(i);
     transDriftVector = zeros(length(start:bot-1),3);
-    rotDriftVector = zeros(length(start:bot-1),3);
     for j = start:(bot-1)
         for k = 1:3
             transDriftVector(j-start+1,k) = transVal(j+1,k) - transVal(j,k);
-            rotDriftVector(j-start+1,k) = rotVal(j+1,k) - rotVal(j,k);
         end
     end
     meanTransDrift = mean(transDriftVector);
-    meanRotDrift = mean(rotDriftVector);
     
-    %removing drift from points
+    % removing drift from points
     transNoDriftVal = zeros(length(start:bot),3);
-    rotNoDriftVal = zeros(length(start:bot),3);
     for j = start:(bot)
         for k = 1:3
             transNoDriftVal(j-start+1,k) = transVal(j,k)- meanTransDrift(k) * (j-start);
-            rotNoDriftVal(j-start+1,k) = rotVal(j,k)- meanRotDrift(k) * (j-start);
         end
     end
     
@@ -112,5 +87,50 @@ for i = 1:length(motion)
     
     %covariance calculation for repeatability 
     transSD(i) = (max(eig(cov(transNoDriftVal))))^0.5
-    rotSD(i) = (max(eig(cov(rotNoDriftVal))))^0.5
+    
+    
+    % rotation repeatability
+    
+    % average drift quaternion
+    for j = start:(bot-1)
+        q1 = quaternion(eul2quat(rotVal(j,1:3), 'ZYX'));
+        q1_inv = conj(q1);
+        q2 = quaternion(eul2quat(rotVal(j+1,1:3), 'ZYX'));
+        Q(1:4, j) = compact(q2 * q1_inv);
+    end
+    M = Q * Q';
+    [V,D] = eigs(M);
+    q_avg = quaternion(V(:,1)');
+    
+    % uncorrected orientations for reference
+    q_raw = zeros(length(start:bot), 4);
+    for j = 1:length(start:bot)
+        q_raw(j,:) = eul2quat(rotVal(j,1:3), 'ZYX');
+    end
+    
+    % remove angular drift from points
+    q_corrected = zeros(length(start:bot), 4);
+    q_corrected(1,:) = eul2quat(rotVal(start,1:3), 'ZYX');
+    for j = 2:length(start:bot)
+        q_prev = quaternion(q_corrected(j-1,:));
+        q_curr = quaternion(eul2quat(rotVal(j,1:3), 'ZYX'));
+        q = (conj(q_avg) * (q_curr * conj(q_prev))) * q_prev;
+        q_corrected(j,:) = compact(q);
+    end
+    
+    % compute mean orientation from the corrected angles
+    q_corrected  = quaternion(q_corrected);
+    q_corrected_mean = meanrot(q_corrected);
+    
+    % compute sample variance
+    sig2 = 0;
+    for j = 1:length(start:bot)
+        sig2 = sig2 + dist(q_corrected(j), q_corrected_mean)^2;
+    end
+    sig2 = sig2 / (length(start:bot) - 1);
+    
+    % compute standard deviation
+    sig = sqrt(sig2);
+    rotSD(i) = rad2deg(sig)
+    
 end 
