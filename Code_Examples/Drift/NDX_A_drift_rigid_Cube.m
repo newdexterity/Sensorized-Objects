@@ -41,32 +41,9 @@ for i = 1:length(motion)
     y = 25.4*data(start:len, 3);
     z = 25.4*data(start:len, 4);
     %extractig values and converting to radians
-    yaw = deg2rad(data(start:len, 5));   %rz
-    pitch = deg2rad(data(start:len, 6)); %ry
-    roll = deg2rad(data(start:len, 7));  %rx
-
-    % removing angle offset for range of motion
-    %centering coordinate frame of the data 
-    %finding minimum and offsetting the data
-    roll = roll - min(roll);
-    pitch = pitch - min(pitch);
-    yaw = yaw - min(yaw);
-    x = x - min(x);
-    y = y - min(y);
-    z = z - min(z);
-    %centering the data
-    rollMid = (max(roll) - min(roll))/2;
-    pitchMid = (max(pitch) - min(pitch))/2;
-    yawMid = (max(yaw) - min(yaw))/2;
-    rx = roll - rollMid;
-    ry = pitch - pitchMid;
-    rz = yaw - yawMid;
-    Xmid = (max(x) - min(x))/2;
-    Ymid = (max(y) - min(y))/2;
-    Zmid = (max(z) - min(z))/2;
-    x = x - Xmid;
-    y = y - Ymid;
-    z = z - Zmid;
+    rz = deg2rad(data(start:len, 5));   %rz
+    ry = deg2rad(data(start:len, 6)); %ry
+    rx = deg2rad(data(start:len, 7));  %rx
     
     % finding peaks
     data = [x,y,z,rx,ry,rz];
