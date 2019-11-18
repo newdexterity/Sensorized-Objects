@@ -93,16 +93,35 @@ for i = 1:length(motion)
     plot3(rotVal(start:bot,1),rotVal(start:bot,2),rotVal(start:bot,3),'.', 'markersize', 20)
     grid on
     
-    % getting drift vector 
+    % translation drift vectors
     for j = start:(bot-1)
         for k = 1:3
             transDriftVector(j-start+1,k) = transVal(j+1,k) - transVal(j,k);
-            rotDriftVector(j-start+1,k) = rotVal(j+1,k) - rotVal(j,k);
         end
     end
-    %calculating the mean drift
+    
+    %calculating the mean translation drift vector
     transDrift(i) = norm(mean(transDriftVector));
-    rotDrift(i) = norm(mean(rotDriftVector));
+    
+    % drift rotations
+    for j = start:(bot-1)
+        % Rotation matrix approach
+        %R1 = eul2rotm(rotVal(j,1:3), 'ZYX');
+        %R2 = eul2rotm(rotVal(j+1,1:3), 'ZYX');
+        %Q(1:4, j) = rotm2quat(inv(R1) * R2)
+        
+        % Quaternion approach
+        q1 = quaternion(eul2quat(rotVal(j,1:3), 'ZYX'));
+        q1_inv = conj(q1);
+        q2 = quaternion(eul2quat(rotVal(j+1,1:3), 'ZYX'));
+        Q(1:4, j) = compact(q2 * q1_inv);
+    end
+    
+    % calculating the mean drift quaternion 
+    M = Q * Q';
+    [V,D] = eigs(M);
+    q_avg = quaternion(V(:,1)');
+    rotDrift(i) = dist(quaternion(1,0,0,0), q_avg);
 end 
 
 %printing out the data values
