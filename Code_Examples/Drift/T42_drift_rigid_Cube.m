@@ -40,9 +40,9 @@ for i = 1:length(motion)
     y = 25.4*data(start:len, 3);
     z = 25.4*data(start:len, 4);
     %extractig values
-    rz = data(start:len, 5);   %rz
+    rz = data(start:len, 7);   %rz
     ry = data(start:len, 6); %ry
-    rx = data(start:len, 7);  %rx
+    rx = data(start:len, 5);  %rx
     
     % finding peaks
     data = [x,y,z,rx,ry,rz];
@@ -82,9 +82,9 @@ for i = 1:length(motion)
     
     %computing rotations between subsequent motions
     for j = start:(bot-1)
-        q1 = quaternion(eul2quat(rotVal(j,1:3), 'ZYX'));
+        q1 = quaternion(eul2quat(rotVal(j,1:3), 'XYZ'));
         q1_inv = conj(q1);
-        q2 = quaternion(eul2quat(rotVal(j+1,1:3), 'ZYX'));
+        q2 = quaternion(eul2quat(rotVal(j+1,1:3), 'XYZ'));
         Q(1:4, j) = compact(q2 * q1_inv);
     end
     
