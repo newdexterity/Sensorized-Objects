@@ -10,7 +10,7 @@ The human hand is Nature's most versatile and dexterous end-effector and it has 
 
 # Contents
 In this repository you can find:
-* CAD and STL files of the rigid and soft manipulation objects. 
+* CAD and STL files of rigid and soft manipulation objects with small, medium, and large sizes. 
 * Code examples demonstrating the benchmarking procedure.
-* In-hand manipulation example data with the T42 and NDX-A* robot hands. 
+* In-hand manipulation example data with the T42 gripper, NDX-A* robot hand, and human hand. 
 * Protocol and benchmark description files. 
