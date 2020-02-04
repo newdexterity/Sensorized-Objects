@@ -15,3 +15,32 @@ Each object of the sensorized object set consists of 5 to 13 parts:
 * two object halves (these halves can be objects of any size and surface stiffness)
 * two removable urethane marker mounts
 * eight removable object weights (optional components)
+
+# Fabrication 
+
+## 3D printing
+STL files have been included in each folder type.
+### Platic Threads
+If the plastic screw does not screw into the object a **M8 tap and die** can be used to fix any tolerancing errors introdruced by the 3D printing proccess.
+
+[comment]: <> (add image of plastic screw and object being tapped)
+
+**NOTE:** The plastic screws should not be overtightened or they will break (using SLA or SLS printing proccesses can increase the strength of the screw).
+
+## Moulding
+### Urethane/ Silicone Mixing
+**Note:** Before moulding the mould should be sprayed with mould release and **ensure not to spray objects** as this may prevent the objects soft skin from sticking correctly to the soft object halves. 
+1. Read the unrethane/ silicone instructions to determine **mix ratio** and **work time**
+    - Work time will determine how quickly you will need to degas and inject the material into the mould.
+2. Pour appropriate resin and hardener portions instructed by the suppliers mix ratio.
+3. Mix togeather thoroughly.
+5. Place mixture into vacuum chamber to degas. 
+6. Pour or inject urethane/ silicone mixture into mould. 
+### Markers
+#### AR Markers
+#### Polhemus Markers
+#### Optical Markers
+
+### Soft Objects 
+Before moulding the objects a narrow nozzle syringe needs to be prepared in order for the chosen urethane or silicone to reach the small narrow gaps without air bubbles.
+[comment]: <> (add image of syringe being prepared)
