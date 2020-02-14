@@ -46,3 +46,6 @@ If the plastic screw does not screw into the object a **M8 tap and die** can be 
 Before moulding the objects a narrow nozzle syringe needs to be prepared in order for the chosen urethane or silicone to reach the small narrow gaps without air bubbles.
 
 [comment]: <> (add image of syringe being prepared)
+<p align="center">
+  <img src = https://user-images.githubusercontent.com/54158341/74497968-faf53b00-4f43-11ea-8a1f-8a414c7fc11c.jpg>
+</p>
