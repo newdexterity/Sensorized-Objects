@@ -38,9 +38,9 @@ If the plastic screw does not screw into the object a **M8 tap and die** can be 
 5. Place mixture into vacuum chamber to degas. 
 6. Pour or inject urethane/ silicone mixture into mould. 
 ### Markers
+#### Optical Markers/ Polhemus Markers
 #### AR Markers
-#### Polhemus Markers
-#### Optical Markers
+
 
 ### Soft Objects 
 Before moulding the objects a narrow nozzle syringe needs to be prepared in order for the chosen urethane or silicone to reach the small narrow spaces in the mould without air bubbles.
@@ -59,3 +59,20 @@ The materials can be seen depicted below with an accompanying video demonstratin
 </p>
 
 [![syringe5sec](https://user-images.githubusercontent.com/54158341/74500838-131d8800-4f4d-11ea-88c0-5d738e4734c0.PNG)](https://www.youtube.com/watch?v=B0mpWGTTy3A&feature=youtu.be "syringe5sec")
+
+#### Cube mould
+<p align="center">
+  <img src = https://user-images.githubusercontent.com/54158341/74522674-85f42680-4f80-11ea-8254-0f5da4df5827.png>
+</p>
+
+#### Cylinder mould
+
+#### Sphere mould
+
+## Demoulding
+
+### Markers
+#### Optical Markers/ Polhemus Markers
+#### AR Markers
+
+### Soft Objects 
