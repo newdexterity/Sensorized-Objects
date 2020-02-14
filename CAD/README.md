@@ -49,3 +49,5 @@ Before moulding the objects a narrow nozzle syringe needs to be prepared in orde
 <p align="center">
   <img src = https://user-images.githubusercontent.com/54158341/74497968-faf53b00-4f43-11ea-8a1f-8a414c7fc11c.jpg>
 </p>
+
+[![syringe5sec](https://user-images.githubusercontent.com/54158341/74500838-131d8800-4f4d-11ea-88c0-5d738e4734c0.PNG)](https://www.youtube.com/watch?v=B0mpWGTTy3A&feature=youtu.be "syringe5sec")
