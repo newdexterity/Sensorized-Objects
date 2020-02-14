@@ -43,7 +43,15 @@ If the plastic screw does not screw into the object a **M8 tap and die** can be 
 #### Optical Markers
 
 ### Soft Objects 
-Before moulding the objects a narrow nozzle syringe needs to be prepared in order for the chosen urethane or silicone to reach the small narrow gaps without air bubbles.
+Before moulding the objects a narrow nozzle syringe needs to be prepared in order for the chosen urethane or silicone to reach the small narrow spaces in the mould without air bubbles.
+
+Materials needed to prepare long nozzle syringe: 
+* Syringe
+* Heat shrink
+* Pliers 
+* Super glue
+
+The materials can be seen depicted below with an accompanying video demonstrating how to fabricate one.
 
 [comment]: <> (add image of syringe being prepared)
 <p align="center">
