@@ -24,6 +24,9 @@ STL files have been included in each folder type.
 If the plastic screw does not screw into the object a **M8 tap and die** can be used to fix any tolerancing errors introdruced by the 3D printing proccess.
 
 [comment]: <> (add image of plastic screw and object being tapped)
+<p align="center">
+  <img src = https://user-images.githubusercontent.com/54158341/74492438-bfeb0b80-4f33-11ea-92d4-38545ee82155.png>
+</p>
 
 **NOTE:** The plastic screws should not be overtightened or they will break (using SLA or SLS printing proccesses can increase the strength of the screw).
 
