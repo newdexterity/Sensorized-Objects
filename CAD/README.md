@@ -38,6 +38,7 @@ If the plastic screw does not screw into the object a **M8 tap and die** can be 
 5. Place mixture into vacuum chamber to degas. 
 6. Pour or inject urethane/ silicone mixture into mould. 
 ### Markers
+Instructional videos for moulding the markers can be found below. When moulding the markers using a softer urethane or silicon (e.g **Smooth On Vytaflex 30**) will make insertion and removal of the markers into and out of the object halves significantly easier.
 #### Optical Markers/ Polhemus Markers
 [![flatMaker](https://user-images.githubusercontent.com/54158341/74596792-f2724100-50b8-11ea-9a1f-15151a7673b6.JPG)](https://www.youtube.com/watch?v=eXIwOtoV1qc "flatMaker")
 #### AR Markers
