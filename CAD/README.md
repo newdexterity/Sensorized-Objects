@@ -39,8 +39,9 @@ If the plastic screw does not screw into the object a **M8 tap and die** can be 
 6. Pour or inject urethane/ silicone mixture into mould. 
 ### Markers
 #### Optical Markers/ Polhemus Markers
+[![flatMaker](https://user-images.githubusercontent.com/54158341/74596792-f2724100-50b8-11ea-9a1f-15151a7673b6.JPG)](https://www.youtube.com/watch?v=eXIwOtoV1qc "flatMaker")
 #### AR Markers
-
+[![ARMaker](https://user-images.githubusercontent.com/54158341/74596832-762c2d80-50b9-11ea-9c4e-b6d14c671c77.JPG)](https://www.youtube.com/watch?v=xcrOEh82KFU "ARMaker")
 
 ### Soft Objects 
 Before moulding the objects a narrow nozzle syringe needs to be prepared in order for the chosen urethane or silicone to reach the small narrow spaces in the mould without air bubbles.
