@@ -1,6 +1,12 @@
 # Sensorized-Objects CAD Files
 In this folder you can find the CAD files and needed to manufacture the components in the object set. 
 
+## ReadMe Contents
+- Folder Contents
+- Object Assembly
+- Fabrication
+- How to Place Polhemus Sensors in Objects
+
 ## Folder Contents
 The objects have been organised into there relative sizes and the rigid and soft surface components are present in all sizes. 
 **Large size -** Contains the lagest sized object set CAD files <br/>
