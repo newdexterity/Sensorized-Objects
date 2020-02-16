@@ -63,15 +63,31 @@ The materials can be seen depicted below with an accompanying video demonstratin
 [![syringe5sec](https://user-images.githubusercontent.com/54158341/74500838-131d8800-4f4d-11ea-88c0-5d738e4734c0.PNG)](https://www.youtube.com/watch?v=B0mpWGTTy3A&feature=youtu.be "syringe5sec")
 
 #### Mould Assembly and Preparation
+Cube and radially split cylinder moulds will require aluminum tape to the mould seams to prevent potential leaking. 
 
 ##### Cube Mould
+
+[comment]: <> (add exploded view of cube assembly)
+[comment]: <> (add assembly video)
+
+**Note:** The walls of the mould should be parallel to the soft object core as shown in the image below to prevent misalignment. 
 <p align="center">
   <img src = https://user-images.githubusercontent.com/54158341/74522674-85f42680-4f80-11ea-8254-0f5da4df5827.png>
 </p>
 
 ##### Cylinder Mould
+* Radially Split Cylinder
+
+[comment]: <> (add exploded view of cylinder assembly)
+[comment]: <> (add assembly video)
+
+* Axially Split Cylinder
+
+[comment]: <> (add exploded view of cylinder assembly)
 
 ##### Sphere Mould
+
+[comment]: <> (add exploded view of sphere assembly)
 
 #### Moulding Process
 [![mouldingObject](https://user-images.githubusercontent.com/54158341/74596973-b096ca00-50bb-11ea-8e53-58e37fe110bc.JPG)](https://www.youtube.com/watch?v=eo5qOiTZaQk "mouldingObject")
@@ -80,6 +96,16 @@ The materials can be seen depicted below with an accompanying video demonstratin
 
 ### Markers
 #### Optical Markers/ Polhemus Markers
+
+[comment]: <> (add video)
+
 #### AR Markers
 
+[comment]: <> (add video)
+
 ### Soft Objects 
+The demoulding proccess of cubes and radially split cylinders are the same. Similarly, can be said for the spheres and axially split cylinders. 
+
+[comment]: <> (add video)
+
+[comment]: <> (add video)
