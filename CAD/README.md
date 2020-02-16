@@ -99,15 +99,15 @@ Cube and radially split cylinder moulds will require aluminum tape to the mould 
 ### Markers
 #### Optical Markers/ Polhemus Markers
 
-[comment]: <> (add video)
+[![OpticalMarkers](https://user-images.githubusercontent.com/54158341/74598466-2197ab00-50d7-11ea-92f8-622f696855fd.JPG)](https://www.youtube.com/watch?v=Dwkm1ft7N5k "OpticalMarkers")
 
 #### AR Markers
 
-[comment]: <> (add video)
+[![ARMarkers](https://user-images.githubusercontent.com/54158341/74598448-b0f08e80-50d6-11ea-8326-aa87f0e9417f.JPG)](https://www.youtube.com/watch?v=l4PmQHS5-48 "ARMarkers")
 
 ### Soft Objects 
 The demoulding proccess of cubes and radially split cylinders are the same. Similarly, can be said for the spheres and axially split cylinders. 
 
-[comment]: <> (add video)
+[![CylinderDemould](https://user-images.githubusercontent.com/54158341/74598400-c1543980-50d5-11ea-9090-9836fae38bf8.JPG)](https://www.youtube.com/watch?v=J1zPYWYStN0&feature=youtu.be "CylinderDemould")
 
-[comment]: <> (add video)
+[![ShpereDemould](https://user-images.githubusercontent.com/54158341/74598378-63bfed00-50d5-11ea-9eae-525b6c3dfa07.JPG)](https://www.youtube.com/watch?v=wvo3y9mB7Rw&feature=youtu.be "ShpereDemould")
