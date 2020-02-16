@@ -68,7 +68,8 @@ Cube and radially split cylinder moulds will require aluminum tape to the mould 
 ##### Cube Mould
 
 [comment]: <> (add exploded view of cube assembly)
-[comment]: <> (add assembly video)
+
+[![CubeMouldPreparations](https://user-images.githubusercontent.com/54158341/74598260-73d6cd00-50d3-11ea-8feb-13c2671f4871.JPG)](https://www.youtube.com/watch?v=x2nqksHXXIw "CubeMouldPreparations")
 
 **Note:** The walls of the mould should be parallel to the soft object core as shown in the image below to prevent misalignment. 
 <p align="center">
@@ -79,7 +80,8 @@ Cube and radially split cylinder moulds will require aluminum tape to the mould 
 * Radially Split Cylinder
 
 [comment]: <> (add exploded view of cylinder assembly)
-[comment]: <> (add assembly video)
+
+[![CylinderMouldPreparations](https://user-images.githubusercontent.com/54158341/74598322-784fb580-50d4-11ea-8708-6aac99996106.JPG)](https://www.youtube.com/watch?v=_m07TIoGHqI "CylinderMouldPreparations")
 
 * Axially Split Cylinder
 
