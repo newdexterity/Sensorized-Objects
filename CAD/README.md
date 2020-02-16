@@ -117,6 +117,8 @@ Components required for moulds:
 
 [![OpticalMarkers](https://user-images.githubusercontent.com/54158341/74598466-2197ab00-50d7-11ea-92f8-622f696855fd.JPG)](https://www.youtube.com/watch?v=Dwkm1ft7N5k "OpticalMarkers")
 
+For Polhemus markers only the first 2 steps of the video need to be followed. The last step is only relevant if you require optical markers.
+
 #### AR Markers
 
 [![ARMarkers](https://user-images.githubusercontent.com/54158341/74598448-b0f08e80-50d6-11ea-8326-aa87f0e9417f.JPG)](https://www.youtube.com/watch?v=l4PmQHS5-48 "ARMarkers")
@@ -127,3 +129,11 @@ The demoulding proccess of cubes and radially split cylinders are the same. Simi
 [![CylinderDemould](https://user-images.githubusercontent.com/54158341/74598400-c1543980-50d5-11ea-9090-9836fae38bf8.JPG)](https://www.youtube.com/watch?v=J1zPYWYStN0&feature=youtu.be "CylinderDemould")
 
 [![ShpereDemould](https://user-images.githubusercontent.com/54158341/74598378-63bfed00-50d5-11ea-9eae-525b6c3dfa07.JPG)](https://www.youtube.com/watch?v=wvo3y9mB7Rw&feature=youtu.be "ShpereDemould")
+
+# How to Place Polhemus Sensors in Objects
+1. Insert micro sensor through the hole of the Polhemus urethane marker. 
+2. Insert the micro sensor into the 2mm hole at the base of the screw. 
+    **Note:** If the sensor can't fit into hole a 2mm drill bit will need to be used to correct the dimensions of the hole. 
+3. Place blu tack around the cable at the base of the screw. This will prevent the sensor from falling out, but will still allow it to be pulled out if a sigincant tug force on the cable is experienced. 
+4. once, the screw and the sensor are in place, the Polhemus urethane marker can then be inserted into the corresponding object half.
+
