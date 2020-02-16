@@ -67,7 +67,9 @@ Cube and radially split cylinder moulds will require aluminum tape to the mould 
 
 ##### Cube Mould
 
-[comment]: <> (add exploded view of cube assembly)
+<p align="center">
+  <img src = https://user-images.githubusercontent.com/54158341/74600176-86acca00-50f2-11ea-9bcd-5ea6770d5870.png>
+</p>
 
 [![CubeMouldPreparations](https://user-images.githubusercontent.com/54158341/74598260-73d6cd00-50d3-11ea-8feb-13c2671f4871.JPG)](https://www.youtube.com/watch?v=x2nqksHXXIw "CubeMouldPreparations")
 
@@ -79,17 +81,23 @@ Cube and radially split cylinder moulds will require aluminum tape to the mould 
 ##### Cylinder Mould
 * Radially Split Cylinder
 
-[comment]: <> (add exploded view of cylinder assembly)
+<p align="center">
+  <img src = https://user-images.githubusercontent.com/54158341/74600182-a0e6a800-50f2-11ea-8e28-6c30978823e5.png>
+</p>
 
 [![CylinderMouldPreparations](https://user-images.githubusercontent.com/54158341/74598322-784fb580-50d4-11ea-8708-6aac99996106.JPG)](https://www.youtube.com/watch?v=_m07TIoGHqI "CylinderMouldPreparations")
 
 * Axially Split Cylinder
 
-[comment]: <> (add exploded view of cylinder assembly)
+<p align="center">
+  <img src = https://user-images.githubusercontent.com/54158341/74600192-be1b7680-50f2-11ea-9674-264c548cab7b.png>
+</p>
 
 ##### Sphere Mould
 
-[comment]: <> (add exploded view of sphere assembly)
+<p align="center">
+  <img src = https://user-images.githubusercontent.com/54158341/74600212-e3a88000-50f2-11ea-862f-1f3216331779.png>
+</p>
 
 #### Moulding Process
 [![mouldingObject](https://user-images.githubusercontent.com/54158341/74596973-b096ca00-50bb-11ea-8e53-58e37fe110bc.JPG)](https://www.youtube.com/watch?v=eo5qOiTZaQk "mouldingObject")
