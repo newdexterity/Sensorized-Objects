@@ -143,3 +143,4 @@ The demoulding proccess of cubes and radially split cylinders are the same. Simi
 3. Place blu tack around the cable at the base of the screw. This will prevent the sensor from falling out, but will still allow it to be pulled out if a sigincant tug force on the cable is experienced. 
 4. once, the screw and the sensor are in place, the Polhemus urethane marker can then be inserted into the corresponding object half.
 
+[comment]: <> (add video of assembly)
