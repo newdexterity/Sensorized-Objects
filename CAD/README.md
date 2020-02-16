@@ -55,7 +55,6 @@ Materials needed to prepare long nozzle syringe:
 
 The materials can be seen depicted below with an accompanying video demonstrating how to fabricate one.
 
-[comment]: <> (add image of syringe being prepared)
 <p align="center">
   <img src = https://user-images.githubusercontent.com/54158341/74497968-faf53b00-4f43-11ea-8a1f-8a414c7fc11c.jpg>
 </p>
@@ -63,7 +62,16 @@ The materials can be seen depicted below with an accompanying video demonstratin
 [![syringe5sec](https://user-images.githubusercontent.com/54158341/74500838-131d8800-4f4d-11ea-88c0-5d738e4734c0.PNG)](https://www.youtube.com/watch?v=B0mpWGTTy3A&feature=youtu.be "syringe5sec")
 
 #### Mould Assembly and Preparation
+Assembly of the moulds can be seen be low with exploded views of the mould and assembly videos. 
+
 Cube and radially split cylinder moulds will require aluminum tape to the mould seams to prevent potential leaking. 
+
+Components required for moulds: 
+* For object halves with internal threads
+    - 1 x M8 screw of 20mm length
+* For object halves without threads
+    - 1x M8 screw of 35mm length
+    - 1 x M8 nut
 
 ##### Cube Mould
 
