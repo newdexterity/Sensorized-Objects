@@ -13,7 +13,7 @@ The human hand is Nature's most versatile and dexterous end-effector and it has 
 - Fabrication
 - How to Place Polhemus Sensors in Objects
 
-# Folder Contents
+## Folder Contents
 In this repository you can find:
 * CAD and STL files of the rigid and soft manipulation objects. 
 * Code examples demonstrating the benchmarking procedure.
