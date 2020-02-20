@@ -33,7 +33,7 @@ Each object of the sensorized object set consists of 5 to 13 parts:
 
 ## 3D printing
 STL files have been included in each folder type.
-### Platic Threads
+### Plastic Threads
 If the plastic screw does not screw into the object a **M8 tap and die** can be used to fix any tolerancing errors introdruced by the 3D printing proccess.
 
 [comment]: <> (add image of plastic screw and object being tapped)
