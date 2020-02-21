@@ -44,17 +44,17 @@ If the plastic screw does not screw into the object, a **M8 tap and die** can be
 ## Molding
 ### Urethane/ Silicone Mixing
 **Note:** Before molding the mold should be sprayed with mold release and **ensure not to spray objects** as this may prevent the objects soft skin from sticking correctly to the soft object halves. 
-1. Read the unrethane/ silicone instructions to determine **mix ratio** and **work time**
+1. Read the urethane/ silicone instructions to determine **mix ratio** and **work time**
     - Work time will determine how quickly you will need to degas and inject the material into the mold.
-2. Pour appropriate resin and hardener portions instructed by the suppliers mix ratio.
-3. Mix togeather thoroughly.
+2. Pour appropriate resin and hardener portions as instructed by the suppliers mix ratio.
+3. Mix together thoroughly.
 5. Place mixture into vacuum chamber to degas. 
 6. Pour or inject urethane/ silicone mixture into mold. 
 ### Markers
 Instructional videos for molding the markers can be found below. When molding the markers using a softer urethane or silicon (e.g **Smooth On Vytaflex 30**) will make insertion and removal of the markers into and out of the object halves significantly easier.
 #### Optical Markers/ Polhemus Markers
 [![flatMaker](https://user-images.githubusercontent.com/54158341/74596792-f2724100-50b8-11ea-9a1f-15151a7673b6.JPG)](https://www.youtube.com/watch?v=eXIwOtoV1qc "flatMaker")
-#### AR Markers
+#### ArUco Marker Mounts
 [![ARMaker](https://user-images.githubusercontent.com/54158341/74596832-762c2d80-50b9-11ea-9c4e-b6d14c671c77.JPG)](https://www.youtube.com/watch?v=xcrOEh82KFU "ARMaker")
 
 ### Soft Objects 
@@ -75,7 +75,7 @@ The materials can be seen depicted below with an accompanying video demonstratin
 [![syringe5sec](https://user-images.githubusercontent.com/54158341/74500838-131d8800-4f4d-11ea-88c0-5d738e4734c0.PNG)](https://www.youtube.com/watch?v=B0mpWGTTy3A&feature=youtu.be "syringe5sec")
 
 #### Mold Assembly and Preparation
-Assembly of the molds can be seen be low with exploded views of the mold and assembly videos. 
+Assembly of the molds can be seen below with exploded views of the mold and assembly videos. 
 
 Cube and radially split cylinder molds will require aluminum tape to the mold seams to prevent potential leaking. 
 
@@ -132,22 +132,27 @@ Components required for molds:
 
 For Polhemus markers only the first 2 steps of the video need to be followed. The last step is only relevant if you require optical markers.
 
-#### AR Markers
+#### ArUco Marker Mounts
 
 [![ARMarkers](https://user-images.githubusercontent.com/54158341/74598448-b0f08e80-50d6-11ea-8326-aa87f0e9417f.JPG)](https://www.youtube.com/watch?v=l4PmQHS5-48 "ARMarkers")
 
 ### Soft Objects 
-The demolding proccess of cubes and radially split cylinders are the same. Similarly, can be said for the spheres and axially split cylinders. 
+The demolding proccess of cubes and radially split cylinders are the same, as well as for the spheres and axially split cylinders. 
 
 [![CylinderDemold](https://user-images.githubusercontent.com/54158341/74598400-c1543980-50d5-11ea-9090-9836fae38bf8.JPG)](https://www.youtube.com/watch?v=J1zPYWYStN0&feature=youtu.be "CylinderDemold")
 
 [![ShpereDemold](https://user-images.githubusercontent.com/54158341/74598378-63bfed00-50d5-11ea-9eae-525b6c3dfa07.JPG)](https://www.youtube.com/watch?v=wvo3y9mB7Rw&feature=youtu.be "ShpereDemold")
 
-# How to Place Polhemus Sensors in Objects
+# How to Place Polhemus Sensors and Retro-Reflective Markers in Objects
+## Retro-Reflective Markers
+For  retro-reflective markers only the first 9 seconds of the below video need to be watched. 
+1. Assemble object.
+2. Insert retro-reflective markers into marker cavities. 
+## Polhemus Micro Sensors
 1. Insert micro sensor through the hole of the Polhemus urethane marker. 
 2. Insert the micro sensor into the 2mm hole at the base of the screw. 
     **Note:** If the sensor can't fit into hole a 2mm drill bit will need to be used to correct the dimensions of the hole. 
 3. Place blu tack around the cable at the base of the screw. This will prevent the sensor from falling out, but will still allow it to be pulled out if a sigincant tug force on the cable is experienced. 
-4. once, the screw and the sensor are in place, the Polhemus urethane marker can then be inserted into the corresponding object half.
+4. Once the screw and the sensor are in place, the Polhemus urethane marker can then be inserted into the corresponding object half.
 
 [![Polhemus](https://user-images.githubusercontent.com/54158341/74620839-6555e780-519f-11ea-8c88-1d8fd543367e.PNG)](https://www.youtube.com/watch?v=4mxdQY6hf8g&feature=youtu.be "Polhemus")
