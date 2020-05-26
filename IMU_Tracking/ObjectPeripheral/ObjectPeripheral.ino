@@ -80,10 +80,4 @@ void loop() {
 
 void update_position() {
   x_characteristic.writeValue(x);
-  byte x_byte[4];
-  x_characteristic.readValue(x_byte, 4);
-  Serial.println(x_byte[0]);
-  Serial.println(x_byte[1]);
-  Serial.println(x_byte[2]);
-  Serial.println(x_byte[3]);
 }

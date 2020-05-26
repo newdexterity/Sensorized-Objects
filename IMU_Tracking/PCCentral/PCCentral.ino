@@ -78,41 +78,16 @@ void read_pose(BLEDevice peripheral) {
     long currentMillis = millis();
     if (currentMillis - previousMillis >= 100) {
       previousMillis = currentMillis;
-
-      //x_characteristic.read();
-      //Serial.println(x_characteristic.valueSize());
-      
-      
-      // Read pose
-      //x_characteristic.read();
-      // Serial.print(", value ");
-      // printData(x_characteristic.value(), x_characteristic.valueLength());
-      //byte xb = x_characteristic.value();
-      //Serial.println(x);
-      
+      // Read pose    
       byte x_byte[4];
       x_characteristic.readValue(x_byte, 4);
       float x = byte_to_float(x_byte);
       Serial.println(x);
-      
     }
   }
 
   Serial.println("Peripheral disconnected");
 }
-
-void printData(const unsigned char data[], int length) {
-  for (int i = 0; i < length; i++) {
-    unsigned char b = data[i];
-
-    if (b < 16) {
-      Serial.print("0");
-    }
-
-    Serial.print(b, HEX);
-  }
-}
-
 
 union byte2float {
   byte b[4];
