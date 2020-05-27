@@ -1,10 +1,14 @@
 #include <ArduinoBLE.h>
 
-long previousMillis = 0;
+unsigned long micros_previous, micros_per_reading;
 
 void setup() {
   Serial.begin(9600);
   while (!Serial);
+
+  // Initialize variables to pace updates to correct rate
+  micros_previous = micros();
+  micros_per_reading = 1000000 / 50;
 
   // Initialize the BLE hardware
   BLE.begin();
@@ -65,24 +69,38 @@ void read_pose(BLEDevice peripheral) {
   }
 
   // Retrieve the position characteristics
-  BLECharacteristic x_characteristic = peripheral.characteristic("2A10");
+  BLECharacteristic roll_characteristic = peripheral.characteristic("2A10");
+  BLECharacteristic pitch_characteristic = peripheral.characteristic("2A11");
+  BLECharacteristic heading_characteristic = peripheral.characteristic("2A12");
 
-  if (!x_characteristic) {
-    Serial.println("Peripheral does not have position characteristic");
+  if (!roll_characteristic || !pitch_characteristic || !heading_characteristic) {
+    Serial.println("Peripheral does not have orientation characteristics");
     peripheral.disconnect();
     return;
   }
 
   // While the peripheral is connected
   while (peripheral.connected()) {
-    long currentMillis = millis();
-    if (currentMillis - previousMillis >= 100) {
-      previousMillis = currentMillis;
+    unsigned long micros_now = micros();
+    if (micros_now - micros_previous >= micros_per_reading) {
+      /*
       // Read pose    
-      byte x_byte[4];
-      x_characteristic.readValue(x_byte, 4);
-      float x = byte_to_float(x_byte);
-      Serial.println(x);
+      byte roll_byte[4], pitch_byte[4], heading_byte[4];
+      roll_characteristic.readValue(roll_byte, 4);
+      pitch_characteristic.readValue(pitch_byte, 4);
+      heading_characteristic.readValue(heading_byte, 4);
+      float roll = byte_to_float(roll_byte);
+      float pitch = byte_to_float(pitch_byte);
+      float heading = byte_to_float(heading_byte);
+      Serial.print(roll);
+      Serial.print(" ");
+      Serial.print(pitch);
+      Serial.print(" ");
+      Serial.println(heading);
+      */
+
+      // Increment previous time, so we keep proper pace
+       micros_previous = micros_previous + micros_per_reading;
     }
   }
 
