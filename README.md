@@ -165,3 +165,8 @@ The Object will contain:
 - 1x Powerboost 500 (a boost converter board for 5V output)
 - 1x 180mah lipo battery
 ![arduinoSetup](https://user-images.githubusercontent.com/54158341/83325589-6380e180-a2c1-11ea-8251-4fa34bcc8333.jpg)
+## Installation of IMU
+Denpending on the chosen object the length of the soldered wires will vary. For small objects only the rigid cube and cylinder shapes are supported. The imu implementation is suppoerted accross all medium and large sized objects support.
+
+The small and medium ranges, plus the large sphere have the electronics installed in one of the 2 object halves. For the large objects (cube and cylinder) the ellectronics are supported in 1 of the 8 object weights. The relevant CAD files can be found above under the CAD Folder. 
+
