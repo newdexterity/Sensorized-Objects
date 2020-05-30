@@ -6,6 +6,7 @@
 - Object Assembly
 - Fabrication
 - How to Place Polhemus Sensors and Retro-Reflective Markers in Objects
+- IMU Object Setup
 
 # Folder Contents
 In this repository you can find:
@@ -156,3 +157,13 @@ For  retro-reflective markers only the first 9 seconds of the below video need t
 4. Once the screw and the sensor are in place, the Polhemus urethane marker can then be inserted into the corresponding object half.
 
 [![Polhemus](https://user-images.githubusercontent.com/54158341/74620839-6555e780-519f-11ea-8c88-1d8fd543367e.PNG)](https://www.youtube.com/watch?v=4mxdQY6hf8g&feature=youtu.be "Polhemus")
+
+# IMU Object SetUp
+## IMU Schematic 
+The Object will contain:
+- 1x Arduino Nano IOT (consists of onboard IMU and bluetooth comunication)
+- 1x Powerboost 500 (a boost converter board for 5V output)
+- 1x 180mah lipo battery
+
+A schematic of the wiring can be found below.
+![arduinoSetup](https://user-images.githubusercontent.com/54158341/83325589-6380e180-a2c1-11ea-8251-4fa34bcc8333.jpg)
