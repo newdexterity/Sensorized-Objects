@@ -164,6 +164,4 @@ The Object will contain:
 - 1x Arduino Nano IOT (consists of onboard IMU and bluetooth comunication)
 - 1x Powerboost 500 (a boost converter board for 5V output)
 - 1x 180mah lipo battery
-
-A schematic of the wiring can be found below.
 ![arduinoSetup](https://user-images.githubusercontent.com/54158341/83325589-6380e180-a2c1-11ea-8251-4fa34bcc8333.jpg)
